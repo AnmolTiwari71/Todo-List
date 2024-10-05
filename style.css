@@ -1,0 +1,185 @@
+.container{
+    margin-left:23%;
+    margin-top:3%;
+    padding: 5px;
+    align-items: center;
+    width:50%;
+    height:100%;
+    border-radius: 20px;
+    background-color: rgb(255, 254, 254);
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+h1{
+    font-weight: 300;
+    font-size: xx-large;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+.group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+}
+.item{
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(106, 90, 248);
+    border:1px solid rgb(98, 81, 255);
+    color: white;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    border-radius: 10px;
+    text-align: center;
+}
+.item:hover{
+    background-color: rgb(50, 28, 253);
+    border:1px solid rgb(40, 17, 255);
+}
+.btn1{
+    border:1px solid rgb(255, 83, 83);
+    border-radius: 30px;
+    background-color:rgb(250, 203, 203) ;
+}
+.btn2{
+    border:1px solid rgb(110, 159, 250);
+    border-radius: 30px;
+    background-color:rgb(209, 225, 255) ;
+}
+.heading{
+    width:100%;
+    margin-top: 5px;
+    margin-right: 5px;
+    align-items: center;
+    margin-bottom: 5px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-weight: 100;
+    font-size: larger;
+}
+.head{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding:5px;
+    border-top: 1px solid rgb(172, 172, 172);
+}
+.form{
+    margin:5px;
+    padding:5px;
+    height: 20rem;;
+    padding-right: 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.elems{
+    margin-top: 10px;
+}
+input{
+    height: 30px;
+    margin-top: 5px;
+    width: 90%;
+    letter-spacing: 1px;
+    padding-left:10px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 2px solid rgb(184, 182, 182);
+}
+input:focus{
+    outline: auto;
+    outline-style: solid;
+    outline-width: 2px;
+    outline-offset: 1px;
+    outline-color:rgb(80, 61, 250) ;
+}
+textarea{
+    height: 60px;
+    width: 90%;
+    margin-top: 5px;
+    padding-left:10px;
+    font-size: 15px;
+    outline: none;
+    border-radius: 10px;
+    border: 2px solid rgb(184, 182, 182);
+}
+.label{
+    font-size:medium;
+    font-weight: 100;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+.add{
+    margin: 0px;
+    visibility: visible;
+}
+.remove{
+    visibility: hidden;
+    display: none;
+}
+.active{
+    background-color: rgb(50, 28, 253);
+}
+.h{
+    margin: 3px;
+    align-items: center;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-weight: 100;
+    font-size: larger;
+}
+.l{
+    margin:5px;
+    font-size:medium;
+    font-weight: 100;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+.red{
+    width: 95%;
+    min-height: 3rem;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-top:5px;
+    border-radius: 20px;
+    border: 1px solid rgb(207, 216, 231);
+    color: rgb(121, 118, 118);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+
+}
+.flex{
+    display: flex;
+    margin:5px;
+}
+button{
+    background-color:white;
+    border:none;
+    color:rgb(71, 71, 71)
+}
+.par{
+    margin: 0px;
+}
+.par:hover{
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+.onChange{
+    display: flex; 
+    justify-content: space-between;
+    align-items:center;
+}
+@media screen and (max-width:800px) {
+    .container{
+        margin-left:0px;
+        width: 96%;
+    }
+}
+@media screen and (max-width:300px) {
+    .l{
+        margin:2px;
+    }
+    .onChange{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-items: left;
+    }
+    .onChange button{
+        width: 100%;
+    }
+    .red{
+        border-radius: 5px;
+    }
+}
